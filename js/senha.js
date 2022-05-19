@@ -6,10 +6,15 @@ const hora = dataHora.getHours()
 let senha = ((dia * ano) - mes) * hora;
 
 
-setTimeout(gerarsenha, 3000)
+setTimeout(gerarsenha, 10)
+setTimeout(recarregar, 3000)
 
 function gerarsenha() {
     document.getElementById('senha').innerHTML = senha;
+}
+
+function recarregar() {
+    location.reload()
 }
 
 //copiarSenha = senha;
