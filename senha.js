@@ -7,15 +7,5 @@ let senha = ((dia * ano) - mes) * hora;
 console.log(senha)
 
 function gerarsenha() {
-    document.getElementById('data').innerHTML = senha
-}
-
-function copiarTexto() {
-    document.getElementById('btncopiar').addEventListener('click', function() {
-
-        document.getElementById('data').select();
-
-        document.execCommand('copy');
-
-    });
+    document.getElementById('data').innerHTML = 'A senha atual é:   ' + senha
 }
