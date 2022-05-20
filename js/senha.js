@@ -7,7 +7,7 @@ let senha = ((dia * ano) - mes) * hora;
 
 
 setTimeout(gerarsenha, 10)
-setTimeout(recarregar, 3000)
+setTimeout(recarregar, 90000)
 
 function gerarsenha() {
     document.getElementById('senha').innerHTML = senha;
