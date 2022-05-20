@@ -23,11 +23,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    border-radius: 50px;
-    border-radius: 30px;
-    border-radius: 70px;
-    border-radius: 70px;
-    border-radius: 70px;
+    border-radius: 24px;
     background: linear-gradient(225deg, #cacaca, #f0f0f0);
     box-shadow: -27px 27px 54px #c1c1c1, 27px -27px 54px #ffffff;
 }
@@ -58,12 +54,12 @@
 }
 
 .senha {
-    margin-top: 24px;
+    margin: 24px;
     font-size: 32px;
 }
 
 .gera-senha {
-    margin-top: 24px;
+    margin: 24px 24px;
     display: flex;
     flex-direction: row;
     justify-content: center;
