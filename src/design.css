@@ -6,7 +6,21 @@
 .icone {
     margin-top: 24px;
 }
+.dados{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items:flex-start;
 
+}
+.dados input{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    
+}
 .container {
     margin: 0 auto;
     width: 500px;

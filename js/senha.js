@@ -1,21 +1,25 @@
-const dataHora = new Date()
-const dia = String(dataHora.getDate()).padStart(2, "0")
-const mes = String(dataHora.getMonth() + 1).padStart(2, "0")
-const ano = dataHora.getFullYear()
-const hora = dataHora.getHours()
-let senha = ((dia * ano) - mes) * hora;
-
-
-setTimeout(gerarsenha, 10)
-setTimeout(recarregar, 90000)
-
-function gerarsenha() {
-    document.getElementById('senha').innerHTML = senha;
+function geraSenha(){
+    const dataHora = new Date()
+    const dia = String(dataHora.getDate()).padStart(2, "0")
+    const mes = String(dataHora.getMonth() + 1).padStart(2, "0")
+    const ano = dataHora.getFullYear()
+    //const hora = dataHora.getHours()
+    const hora = document.querySelector(`#hora`).value;
+    let senha = ((dia * ano) - mes) * hora;
+    
+    
+    setTimeout(gerarsenha, 10)
+    setTimeout(recarregar, 90000)
+    
+    function gerarsenha() {
+        document.getElementById('senha').innerHTML = senha;
+    }
+    
+    function recarregar() {
+        location.reload()
+    }
 }
-
-function recarregar() {
-    location.reload()
-}
+    
 
 //copiarSenha = senha;
 
